@@ -1,0 +1,148 @@
+.main{
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.main-photo{
+    width:530px;
+    margin-right: 30px;
+    max-width: 100%;
+
+}
+.main-details{
+    width: 435px;
+}
+.main-details-vendor{
+    font-size: 12PX;
+    opacity: 0,4;
+
+}
+.main-details-title{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 66px;
+    margin-bottom: 15px;
+}
+.main-details-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    margin-bottom: 36px;  
+}
+.main-details-price{
+    background-color: #3c4140;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.main-details-price::after{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url('../../img/VectorDawn.jpg');
+    background-repeat: repeat no-repeat;
+}
+.main-details-price-action{
+    display: inline-block;
+}
+.main-details-price-reviews{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.main-details-price-price{
+    width: 100px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 28px;
+    color: #ffff;
+}
+.main-details-price-price small{
+    display: block ;
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 0,4;
+
+}
+
+
+.main-details-price-reviews-stars{
+margin-right: 10px;
+grid-template-columns: 18px 18px 18px 18px 18px;
+}
+.main-details-price-reviews-stars li {
+    display: inline-block;
+    color: #85bd71;
+}
+.main-details-price-reviews-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 0.4;
+    color: #ffff;
+}
+.main-details-price-reviews-link:hover{
+    text-decoration: none;
+}
+@media(min-width:1440px){
+    .main{
+        padding-bottom: 200;
+    }
+}
+@media(min-width:1024px){
+    .main{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .main-photo{
+        width:100%;
+
+    }
+    .main-details{
+        min-width: 400px;
+    }
+}
+@media(max-width:768px){
+    .main{
+        flex-flow: column nowrap;
+        padding: 40px 15px;
+    }
+    .main-photo{
+        margin-right: 0;
+        width: 400px;
+        max-width: 100%;
+
+    }
+}
+@media(max-width:425px){
+    .main-details-title{
+        font-size: 28px;
+        line-height: 110px;
+        margin-bottom: 20px;
+
+    }
+    .main-details-text{
+        font-size: 16px;
+
+    }
+    .main-details-price{
+        justify-content: center;
+        text-align: center;
+    }
+    .main-details-price-price{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main-details-price-reviews{
+        justify-content: center;
+    }
+}
